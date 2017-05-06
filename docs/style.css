@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html {
+  font-size: 11px;
+}
+@media (min-width: 480px) {
+html {
+      font-size: 13px;
+}
+}
+@media (min-width: 768px) {
+html {
+      font-size: 16px;
+}
+}
+body {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* typography */
+h1, h2, p {
+  font-family: Montserrat, helvetica, sans-serif;
+  color: #3F2458;
+  font-weight: normal;
+  line-height: 1.5;
+}
+a {
+  color: #43B1F5;
+}
+a:hover {
+    color: #71B013;
+}
+a:active {
+    color: #3F2458;
+}
+*::-moz-selection {
+  background-color: #FDA20E;
+}
+*::selection {
+  background-color: #FDA20E;
+}
+h1 {
+  color: black;
+  font-size: 4rem;
+  line-height: 1;
+}
+h2 {
+  font-family: Montserrat, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+p {
+  font-family: Montserrat, helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.subheading {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #d9d3de;
+}
+.subheading + p {
+  margin-top: 0;
+}
+.main-image p {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #7e6c8f;
+  margin: 0;
+}
+div.videos {
+  padding-top: 2rem;
+}
+/* formating */
+.text {
+  padding: 0 2rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 100%;
+  min-height: 14rem;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: #ccc;
+  padding: 4rem 0 4rem 0;
+}
+.container:first-child {
+  padding-top: 0;
+}
+.image-text {
+  padding: 2rem 2rem;
+}
+#main {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.over {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  left: 0;
+  overflow: visible;
+}
+#header, #footer {
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 7rem;
+  overflow: visible;
+  left: 0px;
+  text-align: center;
+}
+#header {
+  color: white;
+  top: 0px;
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='rgba(0, 255, 255, 1)',GradientType=0 );
+  /* IE6-9 */
+}
+#footer {
+  bottom: 0px;
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 255, 255, 1)', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 2rem;
+  height: 0;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+div.loader[data-v-9386fe72] {
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 9999999;
+  height: 100%;
+  background-color: white;
+}
+div.loader h1[data-v-9386fe72] {
+    color: black;
+}
+
+i.fa {
+  display: inline-block;
+  font-size: 0.7em;
+  vertical-align: top;
+}
+.post {
+  padding-top: 2rem;
+  border-top: thick solid black;
+}
