@@ -60,6 +60,7 @@
         .then((posts) => {
           this.loading = false;
           this.posts = this.posts.concat(posts);
+          this.page += 1;
         })
         .catch(e => this.setError(e));
     },
