@@ -6,6 +6,7 @@ const precss = require('precss');
 const scss = require('postcss-scss');
 const atImport = require('postcss-import');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -83,6 +84,7 @@ module.exports = {
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new ExtractTextPlugin('style.[hash].css'),
+    new CopyWebpackPlugin([{ from: 'src/public/images/*', to: 'public/images/[name].[ext]' }]),
     new HtmlWebpackPlugin({
       title: 'config.title',
       template: path.resolve(__dirname, 'src/index.html'),
